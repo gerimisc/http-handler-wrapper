@@ -39,6 +39,7 @@ func (s *secretHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprint(w, "Secret is 'secret'")
 }
 
+// comparison
 func authHandlerV2(h http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		log.Println("before")
